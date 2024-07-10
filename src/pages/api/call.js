@@ -9,7 +9,7 @@ export default async function handler(req, res) {
             const call = await client.calls.create({
                 to: VERIFIED_PHONE_NUMBER,
                 from: TWILIO_PHONE_NUMBER,
-                url: 'https://demo.twilio.com/docs/voice.xml',
+                url: 'https://ivr-app.vercel.app/api/ivr',
             });
 
             res.status(200).json({ callSid: call.sid });

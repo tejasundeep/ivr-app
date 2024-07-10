@@ -9,7 +9,7 @@ export default function Home() {
         setCalling(true);
         setError(null);
         try {
-            const response = await fetch("/api/call", {
+            const response = await fetch("https://ivr-app.vercel.app/api/call", {
                 method: "POST",
             });
             const data = await response.json();

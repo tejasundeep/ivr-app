@@ -5,7 +5,7 @@ export default function handler(req, res) {
     const response = new VoiceResponse();
 
     const gather = response.gather({
-        action: '/api/gather',
+        action: 'https://ivr-app.vercel.app/api/gather',
         method: 'POST',
         numDigits: 1,
     });
