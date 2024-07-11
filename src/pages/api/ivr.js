@@ -1,6 +1,7 @@
 import twilio from 'twilio';
 
 export default function handler(req, res) {
+    if (req.method === 'POST') {
         try {
             const VoiceResponse = twilio.twiml.VoiceResponse;
             const response = new VoiceResponse();
@@ -20,4 +21,7 @@ export default function handler(req, res) {
             console.error('Error processing request:', error);
             res.status(500).json({ error: 'Internal Server Error' });
         }
+    } else {
+        res.status(405).json({ error: 'Method Not Allowed' });
+    }
 }
