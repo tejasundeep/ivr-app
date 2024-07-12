@@ -1,0 +1,25 @@
+hello sir i am working on landing pages. 
+
+I have checked the live version and local version as i only play with the ui part its the same, i dont think i need to make changes in logical part of the code. 
+
+
+
+
+And I have built the functional version of twilio IVR service.
+
+where on pressing a key it will be grabing data from an api and read that text fetched from that api.
+
+i have shared the code to supriya and guided her how it works. Supriya is working on the asp code.
+
+
+
+
+Next.js API:
+    File-based routing.
+    Each file in the pages/api directory automatically becomes an endpoint.
+    Example: pages/api/user.js will be accessible at /api/user.
+
+ASP.NET API:
+    Convention-based routing or attribute routing.
+    Defined within controller classes.
+    Example: A method in UserController might be mapped to /api/user via route attributes or convention routing.
